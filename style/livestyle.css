@@ -1,0 +1,89 @@
+/* -------------- Logo Image -------------- */
+.crypto-live-info {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: #2980b9;
+    position: relative;
+}
+.live-coin-image {
+    display: grid;
+    row-gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}   
+.crypto-image-item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    background-color: #f8fafc;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+.crypto-image-item img {
+    width: 50%;
+}
+
+/* ------------------- Symbol and Price ------------------ */
+.crypto-live-price {
+    display: grid;
+    row-gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+}
+.crypto-live-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 400px;
+    height: 100%;
+    background-color: #f8fafc;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+.real-time-name {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+.real-time-price {
+    display: flex;
+    align-items: center;
+}
+.price-up {
+    color: green;
+}
+.price-down {
+    color: red;
+}
+.price-neutral {
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .crypto-live-info {
+        display: grid;
+        text-align: center;
+    }
+    .crypto-item-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        
+    }
+}
+.crypto-list-search {
+    flex-direction: column;
+    grid-column: 1 / span 2 ;
+    width: 100%;
+}

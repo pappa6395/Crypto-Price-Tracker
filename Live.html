@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/style/livestyle.css">
+    <script src="https://kit.fontawesome.com/6201649edc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html" id="js-home">Home</a>
+                </li>
+                <li class="drop-down">
+                    <a href="#" class="drop-down-btn js-drop-down-btn">Categories</a>
+                    <div class="drop-down-contents js-drop-down-contents">
+                        <a href="Live.html" id="js-live">Live</a>
+                        <a href="TopPrice.html" id="js-top-price">Top Prices</a>
+                        <a href="highLowPrice.html" id="js-crypto-high-low">High and low prices</a>
+                    </div>
+                </li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <br>
+    <section class="sub-header">
+        <h1>Crypto Price Tracker</h1>
+        <p>Get real-time prices, trends and market caps of your favorite cryptocurrencies</p>
+        <form action="" class="search-form js-search-form">
+            <input type="text" id="search-crypto" name="query" placeholder="Search crypto currency...">
+            <button class="search-btn js-search-btn">Search</button>
+        </form>
+    
+    </section>
+
+    <main>
+        <div class="crypto-live-info">
+            <div class="live-coin-image js-live-coin-image"></div>
+            <div class="crypto-live-price js-crypto-live-price"></div>
+            <div class="crypto-list-search js-crypto-list-search"></div>
+        </div>
+        
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@cryptoTracker.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-network">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-last">
+            <p>2024 For Education. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/script/app.js" type="module"></script>
+    <script src="/script/live.js" type="module"></script>
+
+</html>
